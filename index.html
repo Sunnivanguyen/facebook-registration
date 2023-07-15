@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Facebook Clone</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fb-sologan">
+        <div id="fb-logo-box">
+          <img
+            src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+            alt="fb-logo-img"
+          />
+        </div>
+        <p>
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
+
+      <div class="log-in_container">
+        <form id="log-in_form">
+          <input
+            type="text"
+            id="login-email"
+            name="login-email"
+            placeholder="Email address"
+          />
+          <div class="login-password-field">
+            <input
+              type="password"
+              id="login-password"
+              name="login-password"
+              placeholder="Password"
+            />
+            <span class="login-control-password"
+              ><ion-icon
+                name="eye-outline"
+                class="eye-outline hidden"
+                id="login-eye-outline"
+              ></ion-icon>
+              <ion-icon
+                name="eye-off-outline"
+                class="eye-off-outline"
+                id="login-eye-off-outline"
+              ></ion-icon
+            ></span>
+          </div>
+          <button class="pushable" id="log_in-btn">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"> Log in </span>
+          </button>
+          <a href="#">Forgotten password?</a>
+        </form>
+        <hr />
+        <button class="pushable" id="new-btn">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front"> Create new account </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-container hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Sign Up</h1>
+      <p>It's quick and easy</p>
+      <hr />
+      <div class="sign-up_info">
+        <form id="sign-up_form">
+          <div class="user-name">
+            <input
+              type="text"
+              placeholder="First name"
+              name="first-name"
+              id="first-name"
+            />
+            <input
+              type="text"
+              placeholder="Surname"
+              name="surname"
+              id="surname"
+            />
+          </div>
+          <div id="user-email_password">
+            <input
+              type="text"
+              placeholder="Email address"
+              name="email"
+              id="email"
+            />
+            <br />
+            <div class="signup-password-field">
+              <input
+                type="password"
+                placeholder="New password"
+                autocomplete="off"
+                id="password"
+              />
+              <span class="signup-control-password"
+                ><ion-icon
+                  name="eye-outline"
+                  class="eye-outline hidden"
+                  id="signup-eye-outline"
+                ></ion-icon>
+                <ion-icon
+                  name="eye-off-outline"
+                  class="eye-off-outline"
+                  id="signup-eye-off-outline"
+                ></ion-icon
+              ></span>
+            </div>
+          </div>
+          <label for="date-Of-birth">Date of birth</label>
+          <div class="date-Of-birth" id="date-Of-birth">
+            <select id="date" name="date"></select>
+            <select id="month" name="month"></select>
+            <select id="year" name="year"></select>
+          </div>
+          <p>
+            People who use our service may have uploaded your contact
+            information to Facebook.
+            <a href="#">Learn more</a>
+          </p>
+          <p>
+            By clicking Sign Up, you agree to our Terms, Privacy Policy and
+            Cookies Policy. You may receive SMS notifications from us and can
+            opt out at any time.
+          </p>
+          <button class="pushable" id="submit-btn">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"> Sign up </span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
